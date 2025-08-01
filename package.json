@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-hexagonal-backend-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json && tsconfig-replace-paths -p tsconfig.build.json",
+    "start": "node build/src/index.js",
+    "start:local": "npm run build && npm run start",
+    "test": "jest --config jest.config.js --coverage",
+    "check": "npm run build && npm run test"
+  },
+  "keywords": [],
+  "author": "Facundo Carballo",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.12",
+    "@types/minimatch": "^5.1.2",
+    "@types/node": "^20.12.7",
+    "husky": "^9.1.7",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.2",
+    "tsconfig-replace-paths": "^0.0.14",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/supertest": "^6.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "http-status-codes": "^2.3.0",
+    "zod": "^3.22.4"
+  }
+}

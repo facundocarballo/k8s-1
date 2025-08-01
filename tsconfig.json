@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "ESNext",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "declaration": false,
+    "declarationMap": false,
+    "lib": [
+      "ES2015"
+    ],
+    "resolveJsonModule": true,
+    "rootDir": "./",
+    "baseUrl": ".",
+    "incremental": true,
+    "paths": {
+      "#*": [
+        "./src/*"
+      ]
+    },
+    "strict": true
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "jest.config.js"
+  ]
+}
