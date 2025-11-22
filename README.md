@@ -13,3 +13,13 @@ A brief description of what this app does.
 - Run `npm run test` to run all tests.
 
 ## Documentation
+
+---
+
+## Kubernetes
+
+To create the image for this microservice, run the following command:
+```bash
+./scripts/docker/build-to-minikube.sh k8s-1:v0.0.0
+```
+> Note: Replace `k8s-1:v0.0.0` with your own image name.
