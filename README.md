@@ -20,6 +20,6 @@ A brief description of what this app does.
 
 To create the image for this microservice, run the following command:
 ```bash
-./scripts/docker/build-to-minikube.sh k8s-1:v0.0.0
+./scripts/docker/build-to-minikube.sh k8s-1
 ```
-> Note: Replace `k8s-1:v0.0.0` with your own image name.
+> Note: Replace `k8s-1` with your own image name.
